@@ -1,0 +1,24 @@
+{
+  "name": "ducaoya-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "build": "pkg .",
+    "build-win": "pkg -t win .",
+    "test": "node ./test/index.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json",
+      "*.txt"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
