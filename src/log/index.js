@@ -14,8 +14,6 @@ function pushLog(log) {
     logs.pop();
   }
 
-  console.log(logPath, logs);
-
   fs.writeFile(logPath, JSON.stringify(logs), (err) => {
     if (err) {
       console.error(err);
